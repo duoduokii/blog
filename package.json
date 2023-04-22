@@ -1,16 +1,20 @@
 {
-  "devDependencies": {
-    "vitepress": "^1.0.0-alpha.73"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
-  },
-  "name": "blog",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:duoduokii/blog.git",
-  "author": "kii <2371233951@qq.com>",
-  "license": "MIT"
+	"devDependencies": {
+		"vitepress": "^1.0.0-alpha.73"
+	},
+	"scripts": {
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"@algolia/client-search",
+				"@types/react",
+				"react",
+				"react-dom"
+			]
+		}
+	}
 }
