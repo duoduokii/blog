@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-	title: "kii blog",
+	title: "My Awesome Project",
 	description: "A VitePress Site",
 	base: "/blog/",
 	themeConfig: {
@@ -14,7 +14,7 @@ export default defineConfig({
 
 		sidebar: [
 			{
-				text: "目录",
+				text: "Examples",
 				items: [
 					{ text: "Markdown Examples", link: "/markdown-examples" },
 					{ text: "Runtime API Examples", link: "/api-examples" },
